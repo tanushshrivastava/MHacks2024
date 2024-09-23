@@ -19,3 +19,6 @@ cd my-react-app
 cd backend
     -"python -m uvicorn main:app --reload"
 
+
+frontend:  https://mhacks2024.netlify.app/
+backend:   https://mhacks2024.onrender.com/docs

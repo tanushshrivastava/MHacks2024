@@ -30,6 +30,9 @@ function App() {
 
   return (
     <div className="App">
+       <Section title="Section 1" id="section1" />
+      <Section title="Section 2" id="section2" />
+      <Section title="Section 3" id="section3">
       <header className="App-header">
         <p>
           Message from the backend: {message}
@@ -43,7 +46,7 @@ function App() {
           Feature is {featureEnabled ? "Enabled" : "Disabled"}
         </p>
         <button onClick={toggleFeature}>Toggle Feature</button>
-      </header>
+      </header></Section>
     </div>
   );
 }
