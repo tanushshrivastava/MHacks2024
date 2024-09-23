@@ -17,5 +17,5 @@ cd my-react-app
 
 
 cd backend
-    -"python -m uvicorn main:aoo --reload"
+    -"python -m uvicorn main:app --reload"
 
