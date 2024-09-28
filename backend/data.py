@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-uri = "mongodb+srv://ayannair23:piZnOuJDco3Eurni@greenback.y44sh.mongodb.net/?retryWrites=true&w=majority&appName=greenback"
+uri = "mongodb+srv://<username>:<password>@greenback.y44sh.mongodb.net/?retryWrites=true&w=majority&appName=greenback"
 
 client = MongoClient(uri)
 
@@ -8,7 +8,7 @@ db = client['greenback']
 collection = db['food']
 dummy_data = [
     {
-        "time": "B",  # Breakfast
+        "time": "B",
         "place": "Bursley Dining Hall",
         "foods": [
             {
@@ -26,7 +26,7 @@ dummy_data = [
         ]
     },
     {
-        "time": "L",  # Lunch
+        "time": "L",
         "place": "Hopcat",
         "foods": [
             {
@@ -44,7 +44,7 @@ dummy_data = [
         ]
     },
     {
-        "time": "D",  # Dinner
+        "time": "D",
         "place": "Mojo Dining Hall",
         "foods": [
             {
