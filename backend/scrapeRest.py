@@ -232,6 +232,7 @@ for link in website_links:
 more_web_link = set(more_web_link)
 for link in more_web_link:
     print(link)
+    
 
 
 driver.quit()

@@ -1,0 +1,796 @@
+[
+    {
+      "meal_time": "Breakfast",
+      "places": [
+        
+        {
+          "restaurant": "Stray Hen Cafe",
+          "items": [
+            {
+              "name": "Two Eggs, Bacon or Sausage",
+              "price": 11,
+              "calories": 350,
+              "protein": 20
+            },
+            {
+              "name": "Holy Cow",
+              "price": 30,
+              "calories": 800,
+              "protein": 50
+            },
+            {
+              "name": "North Side Scrambler",
+              "price": 14,
+              "calories": 450,
+              "protein": 25
+            },
+            {
+              "name": "South Side Scrambler",
+              "price": 14,
+              "calories": 450,
+              "protein": 25
+            },
+            {
+              "name": "The Other Side Scrambler",
+              "price": 14,
+              "calories": 350,
+              "protein": 20
+            },
+            {
+              "name": "Avocado Toast",
+              "price": 15,
+              "calories": 400,
+              "protein": 12
+            },
+            {
+              "name": "Pesto Toast",
+              "price": 17,
+              "calories": 500,
+              "protein": 20
+            },
+            {
+              "name": "Southwest Toast",
+              "price": 15,
+              "calories": 450,
+              "protein": 18
+            },
+            {
+              "name": "Burrata Toast",
+              "price": 15,
+              "calories": 450,
+              "protein": 12
+            },
+            {
+              "name": "Filet Toast",
+              "price": 17,
+              "calories": 500,
+              "protein": 25
+            },
+            {
+              "name": "Salmon Toast",
+              "price": 17,
+              "calories": 500,
+              "protein": 30
+            },
+            {
+              "name": "English Muffin Sandwich",
+              "price": 6,
+              "calories": 300,
+              "protein": 15
+            },
+            {
+              "name": "Bagel Sandwich",
+              "price": 7,
+              "calories": 400,
+              "protein": 20
+            },
+            {
+              "name": "Breakfast Burrito",
+              "price": 8,
+              "calories": 500,
+              "protein": 18
+            },
+            {
+              "name": "Breakfast Sliders",
+              "price": 8,
+              "calories": 400,
+              "protein": 20
+            },
+            {
+              "name": "Lox Sandwich",
+              "price": 12,
+              "calories": 450,
+              "protein": 25
+            },
+            {
+              "name": "BLTE & A",
+              "price": 10,
+              "calories": 500,
+              "protein": 25
+            },
+            {
+              "name": "T&A",
+              "price": 8,
+              "calories": 450,
+              "protein": 20
+            },
+            {
+              "name": "Breakfast Tacos",
+              "price": 12,
+              "calories": 500,
+              "protein": 30
+            },
+            {
+              "name": "Zeus Is On Fire",
+              "price": 8,
+              "calories": 350,
+              "protein": 18
+            },
+            {
+              "name": "Granola Parfait",
+              "price": 11,
+              "calories": 300,
+              "protein": 12
+            },
+            {
+              "name": "Ancient Grain Bowl",
+              "price": 11,
+              "calories": 350,
+              "protein": 15
+            },
+            {
+              "name": "Cauliflower Rice Bowl",
+              "price": 13,
+              "calories": 450,
+              "protein": 20
+            },
+            {
+              "name": "Grainy Day Breakfast Bowl",
+              "price": 13,
+              "calories": 450,
+              "protein": 20
+            },
+            {
+              "name": "Southwest Breakfast Bowl",
+              "price": 12,
+              "calories": 400,
+              "protein": 18
+            },
+            {
+              "name": "Buttermilk Pancakes",
+              "price": 10,
+              "calories": 350,
+              "protein": 8
+            },
+            {
+              "name": "Black & White Pancakes",
+              "price": 13,
+              "calories": 450,
+              "protein": 8
+            },
+            {
+              "name": "Razzle Dazzle Pancakes",
+              "price": 13,
+              "calories": 450,
+              "protein": 8
+            },
+            {
+              "name": "Blueberry-Lemon Cheesecake Pancakes",
+              "price": 14,
+              "calories": 500,
+              "protein": 10
+            },
+            {
+              "name": "Nutella and Banana Pancakes",
+              "price": 14,
+              "calories": 500,
+              "protein": 10
+            },
+            {
+              "name": "Cinnamon Swirl Pancakes",
+              "price": 13,
+              "calories": 450,
+              "protein": 10
+            },
+            {
+              "name": "Reese’s Peanut Butter Cup Pancakes",
+              "price": 14,
+              "calories": 500,
+              "protein": 10
+            },
+            {
+              "name": "Chocolate Chip Pancakes",
+              "price": 12,
+              "calories": 450,
+              "protein": 10
+            },
+            {
+              "name": "Classic French Toast",
+              "price": 10,
+              "calories": 350,
+              "protein": 8
+            },
+            {
+              "name": "Cinnamon Roll French Toast",
+              "price": 15,
+              "calories": 500,
+              "protein": 8
+            },
+            {
+              "name": "Apple Churros French Toast",
+              "price": 15,
+              "calories": 500,
+              "protein": 8
+            },
+            {
+              "name": "Waffle",
+              "price": 10,
+              "calories": 350,
+              "protein": 8
+            },
+            {
+              "name": "Flight Combo Waffle",
+              "price": 15,
+              "calories": 500,
+              "protein": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "meal_type": "Lunch",
+      "restaurants": [
+        {
+          "restaurant": "Zamaan Café",
+          "items": [
+            {
+              "name": "Falafel Wrap",
+              "price": 7.95,
+              "calories": 450,
+              "protein": 12
+            },
+            {
+              "name": "Deluxe Falafel Wrap",
+              "price": 8.45,
+              "calories": 500,
+              "protein": 14
+            },
+            {
+              "name": "Eggplant and Rice Wrap",
+              "price": 8.45,
+              "calories": 550,
+              "protein": 10
+            },
+            {
+              "name": "Falafel Zamaan Wrap",
+              "price": 8.45,
+              "calories": 480,
+              "protein": 12
+            },
+            {
+              "name": "Chicken Shawarma Wrap",
+              "price": 8.45,
+              "calories": 520,
+              "protein": 26
+            },
+            {
+              "name": "Chicken Shawarma & Feta Wrap",
+              "price": 8.95,
+              "calories": 550,
+              "protein": 28
+            },
+            {
+              "name": "Zamaan Chicken Wrap",
+              "price": 8.45,
+              "calories": 580,
+              "protein": 30
+            },
+            {
+              "name": "Meat Shawarma Wrap",
+              "price": 8.45,
+              "calories": 600,
+              "protein": 25
+            },
+            {
+              "name": "Kufta Wrap",
+              "price": 8.45,
+              "calories": 570,
+              "protein": 30
+            },
+            {
+              "name": "Tawook Wrap",
+              "price": 8.45,
+              "calories": 530,
+              "protein": 28
+            },
+            {
+              "name": "Riz Bi Dajaj Wrap",
+              "price": 8.45,
+              "calories": 560,
+              "protein": 26
+            }
+          ]
+        },
+        {
+            "restaurant": "NYPD",
+            "items": [
+              {
+                "name": "Any Slice",
+                "price": 2.00,
+                "calories": 450,
+                "protein": 12
+              }
+            ]
+        },
+        {
+          "restaurant": "Condado",
+          "items": [
+            {
+              "name": "Buffalo Chicken",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Baja Shrimp",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Lucy's Fire",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Chicken Bacon Ranch",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Ooey-Gooey",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Southwest Midwest",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Purple Haze",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Korean BBQ",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Blue Dream",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Dado Supreme",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Cali Green",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Braised + Confused",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Sweet Heat",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Bad Habit",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "The Heater",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Rango Tango Hot",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Power Plant",
+              "price":10,
+              "calories":10,
+              "protein":10
+            }
+          ]
+        },
+        {
+            "restaurant": "Slurping Turtle",
+            "foods": [
+              {
+                "name": "Classic Tokyo Shoyu",
+                "price": 17,
+                "calories": 600,
+                "protein": 30
+              },
+              {
+                "name": "Shrimp Shio Ramen",
+                "price": 19,
+                "calories": 650,
+                "protein": 35
+              },
+              {
+                "name": "Chahan (with Pork Belly, Chicken, or Seasonal Veg)",
+                "price": 16,
+                "calories": 500,
+                "protein": 25
+              },
+              {
+                "name": "Chahan (with Shrimp)",
+                "price": 18,
+                "calories": 550,
+                "protein": 30
+              },
+              {
+                "name": "Kinoko Mochi",
+                "price": 17,
+                "calories": 400,
+                "protein": 10
+              },
+              {
+                "name": "DFFC Miso Ramen (Spicy)",
+                "price": 20,
+                "calories": 700,
+                "protein": 35
+              },
+              {
+                "name": "Tan Tan Men (Spicy)",
+                "price": 18,
+                "calories": 650,
+                "protein": 30
+              },
+              {
+                "name": "Hakata Tonkotsu Ramen",
+                "price": 17,
+                "calories": 600,
+                "protein": 30
+              },
+              {
+                "name": "Red Curry Ramen",
+                "price": 17,
+                "calories": 650,
+                "protein": 30
+              }
+            ]
+          }
+      ]
+    },
+    {
+      "meal_type": "Dinner",
+      "restaurants": [
+        {
+          "restaurant": "Amadeus",
+          "items": [
+            {
+              "name": "Ogorkowa (Dill Pickle Soup)",
+              "price": 5,
+              "calories": 120,
+              "protein": 2
+            },
+            {
+              "name": "Barszcz (Vegan Beet Soup)",
+              "price": 5,
+              "calories": 100,
+              "protein": 2
+            },
+            {
+              "name": "Fresh Garden Salad",
+              "price": 8,
+              "calories": 150,
+              "protein": 3
+            },
+            {
+              "name": "Atlantic Salmon Salad",
+              "price": 22,
+              "calories": 400,
+              "protein": 35
+            },
+            {
+              "name": "Grilled Chicken Salad",
+              "price": 20,
+              "calories": 380,
+              "protein": 30
+            },
+            {
+              "name": "Herring Salad",
+              "price": 20,
+              "calories": 350,
+              "protein": 25
+            },
+            {
+              "name": "Roma Artichoke Salad",
+              "price": 16,
+              "calories": 300,
+              "protein": 8
+            },
+            {
+              "name": "Homemade Potato Salad",
+              "price": 14,
+              "calories": 250,
+              "protein": 5
+            },
+            {
+              "name": "Warsaw Salad",
+              "price": 16,
+              "calories": 280,
+              "protein": 7
+            },
+            {
+              "name": "Golabek",
+              "price": 10,
+              "calories": 200,
+              "protein": 10
+            },
+            {
+              "name": "Kielbasa",
+              "price": 12,
+              "calories": 350,
+              "protein": 15
+            },
+            {
+              "name": "Krakow Placek",
+              "price": 13,
+              "calories": 400,
+              "protein": 10
+            },
+            {
+              "name": "Salad Sampler",
+              "price": 12,
+              "calories": 320,
+              "protein": 10
+            },
+            {
+              "name": "Caviar Placek",
+              "price": 13,
+              "calories": 300,
+              "protein": 12
+            },
+            {
+              "name": "Amadeus Placek",
+              "price": 14,
+              "calories": 380,
+              "protein": 20
+            },
+            {
+              "name": "Salmon Mousse",
+              "price": 14,
+              "calories": 320,
+              "protein": 15
+            },
+            {
+              "name": "Herring Placek",
+              "price": 14,
+              "calories": 350,
+              "protein": 18
+            },
+            {
+              "name": "Pierogi (3)",
+              "price": 10,
+              "calories": 180,
+              "protein": 6
+            },
+            {
+              "name": "Pierogi (6)",
+              "price": 17,
+              "calories": 360,
+              "protein": 12
+            }
+          ]
+        }, 
+        {
+          "restaurant": "Condado",
+          "items": [
+            {
+              "name": "Buffalo Chicken",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Baja Shrimp",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Lucy's Fire",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Chicken Bacon Ranch",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Ooey-Gooey",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Southwest Midwest",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Purple Haze",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Korean BBQ",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Blue Dream",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Dado Supreme",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Cali Green",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Braised + Confused",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Sweet Heat",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Bad Habit",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "The Heater",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Rango Tango Hot",
+              "price":10,
+              "calories":10,
+              "protein":10
+            },
+            {
+              "name": "Power Plant",
+              "price":10,
+              "calories":10,
+              "protein":10
+            }
+          ]
+        },
+        {
+            "restaurant": "NYPD",
+            "items": [
+              {
+                "name": "Any Slice",
+                "price": 2.00,
+                "calories": 450,
+                "protein": 12
+              }
+            ]
+        },
+        {
+            "restaurant": "Slurping Turtle",
+            "foods": [
+              {
+                "name": "Classic Tokyo Shoyu",
+                "price": 17,
+                "calories": 600,
+                "protein": 30
+              },
+              {
+                "name": "Shrimp Shio Ramen",
+                "price": 19,
+                "calories": 650,
+                "protein": 35
+              },
+              {
+                "name": "Chahan (with Pork Belly, Chicken, or Seasonal Veg)",
+                "price": 16,
+                "calories": 500,
+                "protein": 25
+              },
+              {
+                "name": "Chahan (with Shrimp)",
+                "price": 18,
+                "calories": 550,
+                "protein": 30
+              },
+              {
+                "name": "Kinoko Mochi",
+                "price": 17,
+                "calories": 400,
+                "protein": 10
+              },
+              {
+                "name": "DFFC Miso Ramen (Spicy)",
+                "price": 20,
+                "calories": 700,
+                "protein": 35
+              },
+              {
+                "name": "Tan Tan Men (Spicy)",
+                "price": 18,
+                "calories": 650,
+                "protein": 30
+              },
+              {
+                "name": "Hakata Tonkotsu Ramen",
+                "price": 17,
+                "calories": 600,
+                "protein": 30
+              },
+              {
+                "name": "Red Curry Ramen",
+                "price": 17,
+                "calories": 650,
+                "protein": 30
+              }
+            ]
+          }
+      ]
+    }
+]
+
