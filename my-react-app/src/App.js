@@ -56,7 +56,7 @@ function App() {
     try {
       await Promise.all(searchParams.time.map(async (day) => {
         const response = await fetch(
-          `http://127.0.0.1:8000/api/search?day=${day}&calorie_threshold=${searchParams.calories}&protein_threshold=${searchParams.protein}&price_threshold=${searchParams.price}`
+          `https://mhacks2024.onrender.com/api/search?day=${day}&calorie_threshold=${searchParams.calories}&protein_threshold=${searchParams.protein}&price_threshold=${searchParams.price}`
         );
         if (!response.ok) throw new Error(`Failed to fetch meals for ${day}`);
         const data = await response.json();
