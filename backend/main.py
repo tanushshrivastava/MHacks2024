@@ -1,6 +1,7 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from datetime import datetime
+from openai import OpenAI
 
 app = FastAPI()
 
@@ -27,3 +28,4 @@ def toggle_feature():
     global feature_state
     feature_state = not feature_state
     return {"featureEnabled": feature_state}
+
