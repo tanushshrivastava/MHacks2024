@@ -11,7 +11,7 @@ function App() {
     protein: '',
     time: 'Select Time',
   });
-  const [results, setResults] = useState([]);
+  const [results, setResults] = useState(null); // Initialize as null
 
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -52,10 +52,10 @@ function App() {
       }
       const data = await response.json();
       console.log('Response from backend:', data); // Log the response to the console
-      setResults([data.best_combination]); // Set results to display the best combination
+      setResults(data.best_combination); // Set the best combination directly
     } catch (error) {
       console.error('Error fetching meal suggestions:', error);
-      setResults([]); // Reset results to empty array on error
+      setResults(null); // Reset results to null on error
     }
   };
 
@@ -141,14 +141,15 @@ function App() {
                 <div key={day} className="day">
                   {day}
                   <div className="day-content">
-                    {results?.map((result, index) => (
-                      <div key={index} className="meal-item">
-                        <h4>Items: {result.items.join(', ')}</h4>
-                        <p>Total Calories: {result.total_calories}</p>
-                        <p>Total Protein: {result.total_protein}g</p>
-                        <p>Total Price: ${result.total_price.toFixed(2)}</p>
+                    {/* Display results only under the selected day */}
+                    {results && searchParams.time === day && results.items && (
+                      <div className="meal-item">
+                        <h4>Items: {results.items.join(', ')}</h4>
+                        <p>Total Calories: {results.total_calories}</p>
+                        <p>Total Protein: {results.total_protein}g</p>
+                        <p>Total Price: ${results.total_price.toFixed(2)}</p>
                       </div>
-                    ))}
+                    )}
                   </div>
                 </div>
               ))}
