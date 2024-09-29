@@ -2,7 +2,7 @@
     {
       "meal_time": "Breakfast",
       "type": "restaurant",
-      "day": "sunday",
+      "day": "Sunday",
       "places": [
         {
           "restaurant": "Sava's",
@@ -331,7 +331,7 @@
     {
       "meal_type": "Lunch",
       "type": "restaurant",
-      "day": "sunday",
+      "day": "Sunday",
       "restaurants": [
         {
           "restaurant": "Zamaan Café",
@@ -575,7 +575,7 @@
     {
       "meal_type": "Dinner",
       "type": "restaurant",
-      "day": "sunday",
+      "day": "Sunday",
       "restaurants": [
         {
           "restaurant": "Amadeus",

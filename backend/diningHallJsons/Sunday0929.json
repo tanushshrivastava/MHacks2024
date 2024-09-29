@@ -1,0 +1,1040 @@
+[
+    {
+        "meal_time": "Breakfast",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "bursley - Hot Cereal",
+                "items": [
+                    {
+                        "name": "Oatmeal",
+                        "price": 0,
+                        "calories": 183,
+                        "protein": 8
+                    },
+                    {
+                        "name": "Brown Sugar",
+                        "price": 0,
+                        "calories": 15,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Toast",
+                "items": [
+                    {
+                        "name": "Zucchini and Summer Squash",
+                        "price": 0,
+                        "calories": 55,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Bruschetta Tofu Scramble",
+                        "price": 0,
+                        "calories": 134,
+                        "protein": 14
+                    },
+                    {
+                        "name": "Potato Tots",
+                        "price": 0,
+                        "calories": 262,
+                        "protein": 1
+                    },
+                    {
+                        "name": "Halal Chicken Sausage Links",
+                        "price": 0,
+                        "calories": 120,
+                        "protein": 17
+                    },
+                    {
+                        "name": "Scrambled Eggs",
+                        "price": 0,
+                        "calories": 163,
+                        "protein": 15
+                    },
+                    {
+                        "name": "Strawberry Sauce",
+                        "price": 0,
+                        "calories": 36,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Vegan Pancakes",
+                        "price": 0,
+                        "calories": 172,
+                        "protein": 6
+                    },
+                    {
+                        "name": "Gallo Pinto Breakfast Power Bowl",
+                        "price": 0,
+                        "calories": 768,
+                        "protein": 42
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - MBakery",
+                "items": [
+                    {
+                        "name": "Chocolate Chocolate Chip Muffins",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Cranberry Orange Muffins",
+                        "price": 0,
+                        "calories": 163,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Chocolate Glazed Donuts",
+                        "price": 0,
+                        "calories": 314,
+                        "protein": 6
+                    },
+                    {
+                        "name": "Chocolate Sprinkles",
+                        "price": 0,
+                        "calories": 35,
+                        "protein": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meal_time": "Lunch",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "bursley - Soup",
+                "items": [
+                    {
+                        "name": "Roasted Tomato Soup with Fresh Basil",
+                        "price": 0,
+                        "calories": 81,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Chicken Vegetable Soup",
+                        "price": 0,
+                        "calories": 71,
+                        "protein": 7
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Signature Maize",
+                "items": [
+                    {
+                        "name": "Jerk-Spiced Scallops",
+                        "price": 0,
+                        "calories": 98,
+                        "protein": 11
+                    },
+                    {
+                        "name": "Mango Salsa",
+                        "price": 0,
+                        "calories": 15,
+                        "protein": 0
+                    },
+                    {
+                        "name": "West African Jollof Rice",
+                        "price": 0,
+                        "calories": 168,
+                        "protein": 5
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Signature Blue",
+                "items": [
+                    {
+                        "name": "Jerk Tofu",
+                        "price": 0,
+                        "calories": 100,
+                        "protein": 13
+                    },
+                    {
+                        "name": "West African Jollof Rice",
+                        "price": 0,
+                        "calories": 168,
+                        "protein": 5
+                    },
+                    {
+                        "name": "Mango Salsa",
+                        "price": 0,
+                        "calories": 15,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - 24 Carrots",
+                "items": [
+                    {
+                        "name": "Savory Baked Tofu",
+                        "price": 0,
+                        "calories": 104,
+                        "protein": 14
+                    },
+                    {
+                        "name": "Peanut Butter and Coconut Sunset Sauce",
+                        "price": 0,
+                        "calories": 56,
+                        "protein": 1
+                    },
+                    {
+                        "name": "Grilled Zucchini & Carrots",
+                        "price": 0,
+                        "calories": 56,
+                        "protein": 1
+                    },
+                    {
+                        "name": "Jasmine Rice",
+                        "price": 0,
+                        "calories": 156,
+                        "protein": 5
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Halal",
+                "items": [
+                    {
+                        "name": "Chile Rubbed Chicken Thigh",
+                        "price": 0,
+                        "calories": 130,
+                        "protein": 16
+                    },
+                    {
+                        "name": "Ancho Lime Sweet Potatoes",
+                        "price": 0,
+                        "calories": 107,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Grilled Corn and Poblano",
+                        "price": 0,
+                        "calories": 45,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Cilantro",
+                        "price": 0,
+                        "calories": 3,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Pizziti",
+                "items": [
+                    {
+                        "name": "Tomato Parmesan Pizza",
+                        "price": 0,
+                        "calories": 305,
+                        "protein": 24
+                    },
+                    {
+                        "name": "Southwest Chicken Pizza",
+                        "price": 0,
+                        "calories": 295,
+                        "protein": 21
+                    },
+                    {
+                        "name": "Garlic Cheese Bread",
+                        "price": 0,
+                        "calories": 222,
+                        "protein": 12
+                    },
+                    {
+                        "name": "Cheese Pizza",
+                        "price": 0,
+                        "calories": 269,
+                        "protein": 14
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Wild Fire Maize",
+                "items": [
+                    {
+                        "name": "Turkey Sloppy Joe w/ White Bun",
+                        "price": 0,
+                        "calories": 196,
+                        "protein": 16
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 2
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Two Oceans",
+                "items": [
+                    {
+                        "name": "General Tso's Tofu",
+                        "price": 0,
+                        "calories": 231,
+                        "protein": 17
+                    },
+                    {
+                        "name": "General Tso Chicken and Vegetables",
+                        "price": 0,
+                        "calories": 143,
+                        "protein": 14
+                    },
+                    {
+                        "name": "Medium Grain Rice",
+                        "price": 0,
+                        "calories": 157,
+                        "protein": 4
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Deli",
+                "items": []
+            },
+            {
+                "restaurant": "bursley - MBakery",
+                "items": [
+                    {
+                        "name": "Monster Candy Cookies",
+                        "price": 0,
+                        "calories": 152,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Chocolate Chunk Cookies",
+                        "price": 0,
+                        "calories": 152,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Vegan Palmier Cookies",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 3
+                    },
+                    {
+                        "name": "White Chocolate Raspberry Blondies",
+                        "price": 0,
+                        "calories": 282,
+                        "protein": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meal_time": "Dinner",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "bursley - Soup",
+                "items": [
+                    {
+                        "name": "Roasted Tomato Soup with Fresh Basil",
+                        "price": 0,
+                        "calories": 41,
+                        "protein": 1
+                    },
+                    {
+                        "name": "Chicken Vegetable Soup",
+                        "price": 0,
+                        "calories": 71,
+                        "protein": 7
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Signature Maize",
+                "items": [
+                    {
+                        "name": "Shrimp Fajitas",
+                        "price": 0,
+                        "calories": 163,
+                        "protein": 7
+                    },
+                    {
+                        "name": "Lone Star Rice",
+                        "price": 0,
+                        "calories": 127,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": 0,
+                        "calories": 70,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Cilantro",
+                        "price": 0,
+                        "calories": 3,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Signature Blue",
+                "items": [
+                    {
+                        "name": "Tempeh Fajitas",
+                        "price": 0,
+                        "calories": 210,
+                        "protein": 11
+                    },
+                    {
+                        "name": "Lone Star Rice",
+                        "price": 0,
+                        "calories": 127,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": 0,
+                        "calories": 70,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Cilantro",
+                        "price": 0,
+                        "calories": 3,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - 24 Carrots",
+                "items": [
+                    {
+                        "name": "Vegetable Biryani w/ Almonds and Cashews",
+                        "price": 0,
+                        "calories": 121,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Cilantro",
+                        "price": 0,
+                        "calories": 3,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Halal",
+                "items": [
+                    {
+                        "name": "BBQ Chicken",
+                        "price": 0,
+                        "calories": 256,
+                        "protein": 26
+                    },
+                    {
+                        "name": "Collard Greens",
+                        "price": 0,
+                        "calories": 47,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Roasted Garlic Smashed Yukon Potatoes",
+                        "price": 0,
+                        "calories": 100,
+                        "protein": 2
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Pizziti",
+                "items": [
+                    {
+                        "name": "Tomato Parmesan Pizza",
+                        "price": 0,
+                        "calories": 305,
+                        "protein": 24
+                    },
+                    {
+                        "name": "Southwest Chicken Pizza",
+                        "price": 0,
+                        "calories": 295,
+                        "protein": 21
+                    },
+                    {
+                        "name": "Garlic Cheese Bread",
+                        "price": 0,
+                        "calories": 222,
+                        "protein": 12
+                    },
+                    {
+                        "name": "Cheese Pizza",
+                        "price": 0,
+                        "calories": 269,
+                        "protein": 14
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Wild Fire Maize",
+                "items": [
+                    {
+                        "name": "Turkey Sloppy Joe w/ White Bun",
+                        "price": 0,
+                        "calories": 196,
+                        "protein": 16
+                    },
+                    {
+                        "name": "Seasoned Fries",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 2
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Two Oceans",
+                "items": [
+                    {
+                        "name": "General Tso's Tofu",
+                        "price": 0,
+                        "calories": 231,
+                        "protein": 17
+                    },
+                    {
+                        "name": "General Tso Chicken and Vegetables",
+                        "price": 0,
+                        "calories": 143,
+                        "protein": 14
+                    },
+                    {
+                        "name": "Medium Grain Rice",
+                        "price": 0,
+                        "calories": 157,
+                        "protein": 4
+                    }
+                ]
+            },
+            {
+                "restaurant": "bursley - Deli",
+                "items": []
+            },
+            {
+                "restaurant": "bursley - MBakery",
+                "items": [
+                    {
+                        "name": "Caramel Syrup",
+                        "price": 0,
+                        "calories": 117,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Vegan Palmier Cookies",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Caramel Cheesecake",
+                        "price": 0,
+                        "calories": 254,
+                        "protein": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meal_time": "Breakfast",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "east-quad - Hot Cereal",
+                "items": [
+                    {
+                        "name": "Quinoa Breakfast Bowl",
+                        "price": 0,
+                        "calories": 206,
+                        "protein": 10
+                    },
+                    {
+                        "name": "Oatmeal",
+                        "price": 0,
+                        "calories": 183,
+                        "protein": 8
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Toast",
+                "items": [
+                    {
+                        "name": "Scrambled Eggs",
+                        "price": 0,
+                        "calories": 163,
+                        "protein": 15
+                    },
+                    {
+                        "name": "Southwest Tofu Scramble",
+                        "price": 0,
+                        "calories": 122,
+                        "protein": 15
+                    },
+                    {
+                        "name": "Vegan Pancakes",
+                        "price": 0,
+                        "calories": 172,
+                        "protein": 6
+                    },
+                    {
+                        "name": "Halal Chicken Sausage Links",
+                        "price": 0,
+                        "calories": 120,
+                        "protein": 17
+                    },
+                    {
+                        "name": "Sweet Potato Wedges",
+                        "price": 0,
+                        "calories": 154,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Tempeh Fajitas",
+                        "price": 0,
+                        "calories": 210,
+                        "protein": 11
+                    },
+                    {
+                        "name": "Fresh Pico De Gallo",
+                        "price": 0,
+                        "calories": 5,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": 0,
+                        "calories": 70,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - MBakery",
+                "items": [
+                    {
+                        "name": "Blueberry Muffins",
+                        "price": 0,
+                        "calories": 164,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Vanilla Glazed Donuts",
+                        "price": 0,
+                        "calories": 309,
+                        "protein": 6
+                    },
+                    {
+                        "name": "Cappuccino Chocolate Chip Muffins",
+                        "price": 0,
+                        "calories": 202,
+                        "protein": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meal_time": "Lunch",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "east-quad - Soup",
+                "items": [
+                    {
+                        "name": "Chicken Noodle Soup",
+                        "price": 0,
+                        "calories": 103,
+                        "protein": 8
+                    },
+                    {
+                        "name": "Tomato Rice Soup",
+                        "price": 0,
+                        "calories": 91,
+                        "protein": 3
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Signature Maize",
+                "items": [
+                    {
+                        "name": "Green Chili Chicken Burritos",
+                        "price": 0,
+                        "calories": 380,
+                        "protein": 27
+                    },
+                    {
+                        "name": "Mexican Rice",
+                        "price": 0,
+                        "calories": 143,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Fresh Pico De Gallo",
+                        "price": 0,
+                        "calories": 5,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Guacamole",
+                        "price": 0,
+                        "calories": 70,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Sour Cream",
+                        "price": 0,
+                        "calories": 55,
+                        "protein": 1
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - 24 Carrots",
+                "items": [
+                    {
+                        "name": "Tempeh Bulgogi Steamed Bun",
+                        "price": 0,
+                        "calories": 245,
+                        "protein": 17
+                    },
+                    {
+                        "name": "Spicy Ginger Slaw",
+                        "price": 0,
+                        "calories": 62,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Purple Rice",
+                        "price": 0,
+                        "calories": 174,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Portabella Broccoli Bake",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 5
+                    },
+                    {
+                        "name": "Long Grain Rice",
+                        "price": 0,
+                        "calories": 119,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Pizza Flatbread",
+                        "price": 0,
+                        "calories": 116,
+                        "protein": 7
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Halal",
+                "items": [
+                    {
+                        "name": "BBQ Chicken",
+                        "price": 0,
+                        "calories": 256,
+                        "protein": 26
+                    },
+                    {
+                        "name": "Hoppin' John Black Eyed Peas and Rice",
+                        "price": 0,
+                        "calories": 96,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Corn on the Cob",
+                        "price": 0,
+                        "calories": 101,
+                        "protein": 5
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Pizziti",
+                "items": [
+                    {
+                        "name": "Chicken Broccoli Alfredo Pizza",
+                        "price": 0,
+                        "calories": 307,
+                        "protein": 19
+                    },
+                    {
+                        "name": "Cheese Bread",
+                        "price": 0,
+                        "calories": 207,
+                        "protein": 12
+                    },
+                    {
+                        "name": "Cheese Pizza",
+                        "price": 0,
+                        "calories": 269,
+                        "protein": 14
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Wild Fire Maize",
+                "items": [
+                    {
+                        "name": "Pub Style Fish",
+                        "price": 0,
+                        "calories": 111,
+                        "protein": 15
+                    },
+                    {
+                        "name": "Tartar Sauce",
+                        "price": 0,
+                        "calories": 169,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Steak Fries",
+                        "price": 0,
+                        "calories": 246,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Hamburger Buns",
+                        "price": 0,
+                        "calories": 80,
+                        "protein": 4
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - MBakery",
+                "items": [
+                    {
+                        "name": "Chocolate Chunk Cookies",
+                        "price": 0,
+                        "calories": 152,
+                        "protein": 3
+                    },
+                    {
+                        "name": "White Chocolate Raspberry Blondies",
+                        "price": 0,
+                        "calories": 282,
+                        "protein": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "meal_time": "Dinner",
+        "day": "Sunday",
+        "type": "diningHall",
+        "places": [
+            {
+                "restaurant": "east-quad - Soup",
+                "items": [
+                    {
+                        "name": "Chicken Noodle Soup",
+                        "price": 0,
+                        "calories": 103,
+                        "protein": 8
+                    },
+                    {
+                        "name": "Tomato Rice Soup",
+                        "price": 0,
+                        "calories": 91,
+                        "protein": 3
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Signature Maize",
+                "items": [
+                    {
+                        "name": "Sole Dover W/ Garlic Cream Sauce",
+                        "price": 0,
+                        "calories": 189,
+                        "protein": 21
+                    },
+                    {
+                        "name": "Mashed Potatoes",
+                        "price": 0,
+                        "calories": 127,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Fresh Steamed Broccoli Florets",
+                        "price": 0,
+                        "calories": 39,
+                        "protein": 4
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - 24 Carrots",
+                "items": [
+                    {
+                        "name": "Crispy Veggie Patty",
+                        "price": 0,
+                        "calories": 259,
+                        "protein": 12
+                    },
+                    {
+                        "name": "Fresh Whipped Potatoes",
+                        "price": 0,
+                        "calories": 165,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Vegan Gravy",
+                        "price": 0,
+                        "calories": 28,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Steamed Broccoli",
+                        "price": 0,
+                        "calories": 37,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Portabella Broccoli Bake",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 5
+                    },
+                    {
+                        "name": "Long Grain Rice",
+                        "price": 0,
+                        "calories": 119,
+                        "protein": 4
+                    },
+                    {
+                        "name": "Pizza Flatbread",
+                        "price": 0,
+                        "calories": 116,
+                        "protein": 7
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Halal",
+                "items": [
+                    {
+                        "name": "Berbere Chicken",
+                        "price": 0,
+                        "calories": 148,
+                        "protein": 19
+                    },
+                    {
+                        "name": "Oven Roasted Garlic Yukon Potatoes",
+                        "price": 0,
+                        "calories": 110,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Roasted Delicata Squash",
+                        "price": 0,
+                        "calories": 44,
+                        "protein": 1
+                    },
+                    {
+                        "name": "Gremolata Pesto",
+                        "price": 0,
+                        "calories": 264,
+                        "protein": 1
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Pizziti",
+                "items": [
+                    {
+                        "name": "Chicken Broccoli Alfredo Pizza",
+                        "price": 0,
+                        "calories": 307,
+                        "protein": 19
+                    },
+                    {
+                        "name": "Cheese Bread",
+                        "price": 0,
+                        "calories": 207,
+                        "protein": 12
+                    },
+                    {
+                        "name": "Cheese Pizza",
+                        "price": 0,
+                        "calories": 269,
+                        "protein": 14
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - Wild Fire Maize",
+                "items": [
+                    {
+                        "name": "Pub Style Fish",
+                        "price": 0,
+                        "calories": 111,
+                        "protein": 15
+                    },
+                    {
+                        "name": "Steak Fries",
+                        "price": 0,
+                        "calories": 246,
+                        "protein": 2
+                    },
+                    {
+                        "name": "Tartar Sauce",
+                        "price": 0,
+                        "calories": 169,
+                        "protein": 0
+                    }
+                ]
+            },
+            {
+                "restaurant": "east-quad - MBakery",
+                "items": [
+                    {
+                        "name": "Caramel Syrup",
+                        "price": 0,
+                        "calories": 117,
+                        "protein": 0
+                    },
+                    {
+                        "name": "Vegan Palmier Cookies",
+                        "price": 0,
+                        "calories": 176,
+                        "protein": 3
+                    },
+                    {
+                        "name": "Caramel Cheesecake",
+                        "price": 0,
+                        "calories": 254,
+                        "protein": 6
+                    }
+                ]
+            }
+        ]
+    }
+]
