@@ -2,6 +2,7 @@
     {
       "meal_time": "Breakfast",
       "day": "saturday",
+      "type": "restaurant",
       "places": [
         {
           "restaurant": "Sava's",
@@ -329,6 +330,7 @@
     },
     {
       "meal_type": "Lunch",
+      "type": "restaurant",
       "day": "saturday",
       "restaurants": [
         {
@@ -513,6 +515,7 @@
     },
     {
       "meal_type": "Dinner",
+      "type": "restaurant",
       "day": "saturday",
       "restaurants": [
         {

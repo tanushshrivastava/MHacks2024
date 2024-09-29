@@ -1,6 +1,7 @@
 [
     {
       "meal_time": "Breakfast",
+      "type": "restaurant",
       "day": "sunday",
       "places": [
         {
@@ -329,6 +330,7 @@
     },
     {
       "meal_type": "Lunch",
+      "type": "restaurant",
       "day": "sunday",
       "restaurants": [
         {
@@ -572,6 +574,7 @@
     },
     {
       "meal_type": "Dinner",
+      "type": "restaurant",
       "day": "sunday",
       "restaurants": [
         {

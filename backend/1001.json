@@ -2,6 +2,7 @@
     {
       "meal_time": "Breakfast",
       "day": "tuesday",
+      "type": "restaurant",
       "places": [
         
         {
@@ -242,6 +243,7 @@
     {
       "meal_type": "Lunch",
       "day": "tuesday",
+      "type": "restaurant",
       "restaurants": [
         {
           "restaurant": "Zamaan Café",
@@ -496,6 +498,7 @@
     {
       "meal_type": "Dinner",
       "day": "tuesday",
+      "type": "restaurant",
       "restaurants": [
         {
           "restaurant": "Amadeus",
