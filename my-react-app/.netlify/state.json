@@ -1,3 +1,21 @@
 {
-	"siteId": "b8b622ab-24f0-4358-ace8-f47e780182f9"
+	"siteId": "b8b622ab-24f0-4358-ace8-f47e780182f9",
+	"geolocation": {
+		"data": {
+			"city": "Ann Arbor",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "MI",
+				"name": "Michigan"
+			},
+			"timezone": "America/Detroit",
+			"latitude": 42.2709,
+			"longitude": -83.7268,
+			"postalCode": "48104"
+		},
+		"timestamp": 1727624367095
+	}
 }
