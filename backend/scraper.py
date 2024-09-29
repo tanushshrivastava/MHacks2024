@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 import os
 # Step 1: Specify the URL of the website from which to fetch the content
-def scrape(url, hall):
+def scrape(url, hall, day, totalDay):
    response = requests.get(url)
    if response.status_code == 200:
         html_content = response.text
@@ -12,7 +12,7 @@ def scrape(url, hall):
 
         # Prepare to append or write new data
         results = []
-        file_path = "fri1004.json"
+        file_path = "diningHallJsons/" + day + totalDay +".json"
         if os.path.exists(file_path):
             # Read existing data first if file exists
             with open(file_path, 'r', encoding='utf-8') as file:
@@ -25,6 +25,8 @@ def scrape(url, hall):
         for h3 in soup.find_all('h3')[2:]:  # Starting from the third h3
             section = {
                 'meal_time': h3.get_text(strip=True),
+                'day': day,
+                'type': "diningHall",
                 'places': []
             }
 

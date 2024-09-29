@@ -2,6 +2,7 @@
     {
         "meal_time": "Breakfast",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "bursley - Hot Cereal",
@@ -107,6 +108,7 @@
     {
         "meal_time": "Lunch",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "bursley - Soup",
@@ -336,6 +338,7 @@
     {
         "meal_time": "Dinner",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "bursley - Soup",
@@ -553,6 +556,7 @@
     {
         "meal_time": "Breakfast",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "east-quad - Hot Cereal",
@@ -652,6 +656,7 @@
     {
         "meal_time": "Lunch",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "east-quad - Soup",
@@ -843,6 +848,7 @@
     {
         "meal_time": "Dinner",
         "day": "Monday",
+        "type": "diningHall",
         "places": [
             {
                 "restaurant": "east-quad - Soup",

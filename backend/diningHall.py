@@ -8,16 +8,20 @@ dayInput = "04"
 monthInput = "10"
 
 month = monthInput
-day = dayInput
+date = dayInput
+day = "Friday"
+
+
+totalDay = monthInput + dayInput
 
 foods = []
 links = []
 
 for hall in diningHallsExtension:
-    finalLink = rootDiningHallLink+hall+dateFormat+month+"-"+day
+    finalLink = rootDiningHallLink+hall+dateFormat+month+"-"+date
     links.append(finalLink)
 
 for count, link in enumerate(links):
-    scrape(link, diningHallsExtension[count])
+    scrape(link, diningHallsExtension[count], day, totalDay)
     
     
