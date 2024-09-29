@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './styles.css';
 import pfp from './pfp.png';
 
@@ -11,7 +11,7 @@ function App() {
     protein: '',
     time: 'Select Time',
   });
-  const [results, setResults] = useState(null); // Initialize as null
+  const [results, setResults] = useState(null);
 
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
@@ -42,7 +42,7 @@ function App() {
     setSearchParams({ ...searchParams, [name]: value });
   };
 
-  const fetchMealSuggestions = async () => {
+  const fetchMealSuggestions = useCallback(async () => {
     try {
       const response = await fetch(
         `http://127.0.0.1:8000/api/search?day=${searchParams.time}&calorie_threshold=${searchParams.calories}&protein_threshold=${searchParams.protein}&price_threshold=${searchParams.price}`
@@ -51,13 +51,13 @@ function App() {
         throw new Error('No suitable meals found');
       }
       const data = await response.json();
-      console.log('Response from backend:', data); // Log the response to the console
-      setResults(data.best_combination); // Set the best combination directly
+      console.log('Response from backend:', data);
+      setResults(data); // Set the results from the backend
     } catch (error) {
       console.error('Error fetching meal suggestions:', error);
       setResults(null); // Reset results to null on error
     }
-  };
+  }, [searchParams]);
 
   useEffect(() => {
     if (
@@ -68,7 +68,7 @@ function App() {
     ) {
       fetchMealSuggestions();
     }
-  }, [searchParams.time, searchParams.calories, searchParams.protein, searchParams.price]);
+  }, [searchParams.time, searchParams.calories, searchParams.protein, searchParams.price, fetchMealSuggestions]);
 
   return (
     <div>
@@ -140,17 +140,37 @@ function App() {
               {visibleDays.map((day) => (
                 <div key={day} className="day">
                   {day}
-                  <div className="day-content">
-                    {/* Display results only under the selected day */}
-                    {results && searchParams.time === day && results.items && (
-                      <div className="meal-item">
-                        <h4>Items: {results.items.join(', ')}</h4>
-                        <p>Total Calories: {results.total_calories}</p>
-                        <p>Total Protein: {results.total_protein}g</p>
-                        <p>Total Price: ${results.total_price.toFixed(2)}</p>
-                      </div>
-                    )}
-                  </div>
+                  <div className="day-content scrollable-content">
+                  {/* Display results only under the selected day */}
+                  {results && searchParams.time === day && (
+                    <div className="meal-item">
+                      {results.breakfast && (
+                        <>
+                          <h4>Breakfast: {results.breakfast.items.join(', ')} (from {results.breakfast.restaurant})</h4>
+                          <p>Calories: {results.breakfast.total_calories}</p>
+                          <p>Protein: {results.breakfast.total_protein}g</p>
+                          <p>Price: ${results.breakfast.total_price.toFixed(2)}</p>
+                        </>
+                      )}
+                      {results.lunch && (
+                        <>
+                          <h4>Lunch: {results.lunch.items.join(', ')} (from {results.lunch.restaurant})</h4>
+                          <p>Calories: {results.lunch.total_calories}</p>
+                          <p>Protein: {results.lunch.total_protein}g</p>
+                          <p>Price: ${results.lunch.total_price.toFixed(2)}</p>
+                        </>
+                      )}
+                      {results.dinner && (
+                        <>
+                          <h4>Dinner: {results.dinner.items.join(', ')} (from {results.dinner.restaurant})</h4>
+                          <p>Calories: {results.dinner.total_calories}</p>
+                          <p>Protein: {results.dinner.total_protein}g</p>
+                          <p>Price: ${results.dinner.total_price.toFixed(2)}</p>
+                        </>
+                      )}
+                    </div>
+                  )}
+                </div>
                 </div>
               ))}
             </div>
