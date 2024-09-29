@@ -50,13 +50,6 @@ function App() {
     }
   };
 
-  const visibleDays = [
-    days[currentIndex],
-    days[(currentIndex + 1) % days.length],
-    days[(currentIndex + 2) % days.length],
-  ];
-
-
   const fetchMealSuggestions = useCallback(async () => {
     const resultsByDay = {};
     try {
