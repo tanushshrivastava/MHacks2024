@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+  font-family: 'Fredoka', sans-serif;
+  background-color: #e0f7e9;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+}
+
+.app-title {
+    text-align: center;
+    margin: 0; /* Remove default margins */
+    padding: 10px 0; /* Add some padding for spacing */
+  }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.sidebar-button {
+  background-color: #9a8c98;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9a8c98;
+  margin-right: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c9ada7;
+  border-radius: 5px;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  flex-grow: 1;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.tag {
+  background-color: #f2e9e4;
+  border-radius: 20px;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.remove-tag {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #9a8c98;
+}
+
+.search-button {
+  background-color: #c9ada7;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.calendar {
+  display: flex;
+  gap: 10px;
+}
+
+.day {
+  flex-grow: 1;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.day-content {
+  height: 400px;
+  margin-top: 5px;
+  background-color: #f2e9e4;
+  border-radius: 5px;
+}

@@ -1,52 +1,60 @@
 import React, { useState } from 'react';
-import './App.css';
-const url2 = 'http://localhost:8000'
-const url1 = 'https://mhacks2024.onrender.com'
+import './styles.css';
+import pfp from './pfp.png';
+
 function App() {
-  const [message, setMessage] = useState('');
-  const [time, setTime] = useState('');
-  const [featureEnabled, setFeatureEnabled] = useState(false);
+  const [tags, setTags] = useState([]);
+  const [inputValue, setInputValue] = useState('');
 
-  const fetchMessage = () => {
-    fetch(url1 + '/api/message')
-      .then(response => response.json())
-      .then(data => setMessage(data.message))
-      .catch(err => console.error('Error fetching data:', err));
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter' && inputValue.trim()) {
+      setTags([...tags, inputValue]);
+      setInputValue('');
+    }
   };
 
-  const fetchTime = () => {
-    fetch(url1 + '/api/time')
-      .then(response => response.json())
-      .then(data => setTime(data.time))
-      .catch(err => console.error('Error fetching data:', err));
-  };
-
-  const toggleFeature = () => {
-    fetch(url1 + '/api/toggle')
-      .then(response => response.json())
-      .then(data => setFeatureEnabled(data.featureEnabled))
-      .catch(err => console.error('Error fetching data:', err));
+  const removeTag = (indexToRemove) => {
+    setTags(tags.filter((_, index) => index !== indexToRemove));
   };
 
   return (
+    <div><h1 className="app-title">FoodFindr</h1>
     <div className="App">
-       <Section title="Section 1" id="section1" />
-      <Section title="Section 2" id="section2" />
-      <Section title="Section 3" id="section3">
-      <header className="App-header">
-        <p>
-          Message from the backend: {message}
-        </p>
-        <button onClick={fetchMessage}>Fetch Message</button>
-        <p>
-          Server Time: {time}
-        </p>
-        <button onClick={fetchTime}>Get Time</button>
-        <p>
-          Feature is {featureEnabled ? "Enabled" : "Disabled"}
-        </p>
-        <button onClick={toggleFeature}>Toggle Feature</button>
-      </header></Section>
+      <div className="sidebar">
+        <button className="sidebar-button">Schedule</button>
+        <button className="sidebar-button">Feed</button>
+        <button className="sidebar-button">For You Page</button>
+      </div>
+      <div className="main-content">
+        <div className="header">
+          <img src={pfp} alt="Profile" className="profile-icon" />
+          <div className="search-bar">
+            {tags.map((tag, index) => (
+              <span className="tag" key={index}>
+                {tag}
+                <span className="remove-tag" onClick={() => removeTag(index)}>✖</span>
+              </span>
+            ))}
+            <input
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={handleKeyDown}
+              placeholder="Search tags..."
+            />
+            <button className="search-button">Search</button>
+          </div>
+        </div>
+        <div className="calendar">
+          {['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'].map((day) => (
+            <div key={day} className="day">
+              {day}
+              <div className="day-content"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
     </div>
   );
 }
