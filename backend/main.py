@@ -4,6 +4,10 @@ from pymongo import MongoClient
 import random
 from itertools import combinations
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = FastAPI()
 
@@ -15,6 +19,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Load environment variables
+load_dotenv()
 
 # Get MongoDB credentials from environment variables
 mongoPass = os.getenv("mongoPass")
