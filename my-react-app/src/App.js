@@ -3,6 +3,7 @@ import './styles.css';
 import pfp from './pfp.png';
 
 function App() {
+  // eslint-disable-next-line
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
   const [searchParams, setSearchParams] = useState({
