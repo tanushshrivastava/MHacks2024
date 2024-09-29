@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
 body {
@@ -13,16 +12,30 @@ body {
 }
 
 .app-title {
-    text-align: center;
-    margin: 0; /* Remove default margins */
-    padding: 10px 0; /* Add some padding for spacing */
-  }
+  text-align: center;
+  margin: 0;
+  padding: 30px 0;
+}
 
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
   padding: 20px;
+}
+
+.pfp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .sidebar-button {
@@ -33,6 +46,8 @@ body {
   color: #fff;
   cursor: pointer;
   font-family: 'Fredoka', sans-serif;
+  width: 100%;
+  text-align: center;
 }
 
 .main-content {
@@ -46,64 +61,55 @@ body {
   margin-bottom: 20px;
 }
 
-.profile-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #9a8c98;
-  margin-right: 20px;
-}
+.search-bars {
+    display: flex;
+    flex-direction: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
+    padding-bottom: 40px;
+  }
 
-.search-bar {
-  display: flex;
-  align-items: center;
+.search-input {
   border: 1px solid #c9ada7;
-  border-radius: 5px;
-  padding: 5px;
-  flex-grow: 1;
-}
-
-.search-bar input {
-  border: none;
-  outline: none;
-  padding: 5px;
-  flex-grow: 1;
+  border-radius: 10px;
+  padding: 8px;
   font-family: 'Fredoka', sans-serif;
+  width: 150px;
+  box-sizing: border-box;
 }
 
-.tag {
-  background-color: #f2e9e4;
-  border-radius: 20px;
-  padding: 5px 10px;
+.calendar-container {
   display: flex;
   align-items: center;
-  margin-right: 5px;
-  font-family: 'Fredoka', sans-serif;
+  justify-content: center;
+  gap: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.remove-tag {
-  margin-left: 5px;
-  cursor: pointer;
-  color: #9a8c98;
+.animating {
+  transform: translateX(-10px);
 }
 
-.search-button {
-  background-color: #c9ada7;
+.nav-button {
+  background-color: #9a8c98;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 5px 10px;
   color: #fff;
   cursor: pointer;
-  font-family: 'Fredoka', sans-serif;
 }
 
 .calendar {
   display: flex;
   gap: 10px;
+  overflow: hidden;
 }
 
 .day {
-  flex-grow: 1;
+  width: 400px;
   text-align: center;
   font-family: 'Fredoka', sans-serif;
 }
@@ -114,3 +120,18 @@ body {
   background-color: #f2e9e4;
   border-radius: 5px;
 }
+
+.profile-icon {
+    width: 40px; /* Adjust the width to make it smaller */
+    height: 40px; /* Adjust the height to match the width */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    background-color: #9a8c98; /* Optional: Background color if no image is loaded */
+    padding: 15px;
+  }
+
+.scrollable-content {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto;
+  }
+  
