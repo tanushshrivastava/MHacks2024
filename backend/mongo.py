@@ -20,7 +20,7 @@ db = client['greenback']
 collection = db['food']
 
 # Path to the folder containing the JSON files
-folder_path = 'diningHallJsons'
+folder_path = 'restaurantsJsons'
 
 # List to hold all the JSON data
 all_data = []

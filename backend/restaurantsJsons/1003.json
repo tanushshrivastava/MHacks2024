@@ -1,6 +1,8 @@
 [
     {
       "meal_time": "Breakfast",
+      "day": "Thursday",
+      "type": "restaurant",
       "places": [
         
         {
@@ -240,6 +242,8 @@
     },
     {
       "meal_type": "Lunch",
+      "day": "Thursday",
+      "type": "restaurant",
       "restaurants": [
         {
           "restaurant": "Zamaan Café",
@@ -311,6 +315,17 @@
               "protein": 26
             }
           ]
+        },
+        {
+            "restaurant": "Buffalo Wild Wings",
+            "items": [
+              {
+                "name": "BOGO 10",
+                "price": 13.24,
+                "calories": 1210,
+                "protein": 96
+              }
+            ]
         },
         {
           "restaurant": "HopCat",
@@ -745,6 +760,8 @@
     },
     {
       "meal_type": "Dinner",
+      "day": "Thursday",
+      "type": "restaurant",
       "restaurants": [
         {
           "restaurant": "Amadeus",
@@ -1319,6 +1336,17 @@
               }
             ]
           },
+          {
+            "restaurant": "Buffalo Wild Wings",
+            "items": [
+              {
+                "name": "BOGO 10",
+                "price": 13.24,
+                "calories": 1210,
+                "protein": 96
+              }
+            ]
+        },
         {
             "restaurant": "Slurping Turtle",
             "foods": [

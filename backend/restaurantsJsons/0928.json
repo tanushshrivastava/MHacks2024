@@ -1,8 +1,98 @@
 [
     {
       "meal_time": "Breakfast",
+      "day": "Saturday",
+      "type": "restaurant",
       "places": [
-        
+        {
+          "restaurant": "Sava's",
+          "items": [
+            {
+              "name": "Big House Waffle",
+              "price": 15,
+              "calories": 500,
+              "protein": 7
+            },
+            {
+              "name": "French Toast Brulée",
+              "price": 16,
+              "calories": 600,
+              "protein": 10
+            },
+            {
+              "name": "Labneh and Granola",
+              "price": 12,
+              "calories": 350,
+              "protein": 15
+            },
+            {
+              "name": "Chicken and Waffles",
+              "price": 17,
+              "calories": 800,
+              "protein": 30
+            },
+            {
+              "name": "Huevos Rancheros",
+              "price": 16,
+              "calories": 650,
+              "protein": 25
+            },
+            {
+              "name": "Turkish Eggs",
+              "price": 14,
+              "calories": 450,
+              "protein": 20
+            },
+            {
+              "name": "Veggie Hash",
+              "price": 15,
+              "calories": 500,
+              "protein": 20
+            },
+            {
+              "name": "Steak & Eggs",
+              "price": 22,
+              "calories": 800,
+              "protein": 50
+            },
+            {
+              "name": "Shrimp & Grits",
+              "price": 20,
+              "calories": 700,
+              "protein": 30
+            },
+            {
+              "name": "Bang Bang Shrimp",
+              "price": 16,
+              "calories": 400,
+              "protein": 20
+            },
+            {
+              "name": "Eggs Benedict",
+              "price": 18,
+              "calories": 700,
+              "protein": 30
+            },
+            {
+              "name": "Benedict Florentine",
+              "price": 17,
+              "calories": 650,
+              "protein": 25
+            },
+            {
+              "name": "Breakfast Plate",
+              "price": 21,
+              "calories": 700,
+              "protein": 40
+            },
+            {
+              "name": "Piadina",
+              "price": 16,
+              "calories": 500,
+              "protein": 25
+            }
+          ]
+        },
         {
           "restaurant": "Stray Hen Cafe",
           "items": [
@@ -240,6 +330,8 @@
     },
     {
       "meal_type": "Lunch",
+      "type": "restaurant",
+      "day": "Saturday",
       "restaurants": [
         {
           "restaurant": "Zamaan Café",
@@ -311,17 +403,6 @@
               "protein": 26
             }
           ]
-        },
-        {
-            "restaurant": "Baba Dari",
-            "items": [
-              {
-                "name": "Chicken Shawarma Wrap",
-                "price": 5.00,
-                "calories": 450,
-                "protein": 12
-              }
-            ]
         },
         {
           "restaurant": "Condado",
@@ -429,70 +510,13 @@
               "protein":10
             }
           ]
-        },
-        {
-            "restaurant": "Slurping Turtle",
-            "foods": [
-              {
-                "name": "Classic Tokyo Shoyu",
-                "price": 17,
-                "calories": 600,
-                "protein": 30
-              },
-              {
-                "name": "Shrimp Shio Ramen",
-                "price": 19,
-                "calories": 650,
-                "protein": 35
-              },
-              {
-                "name": "Chahan (with Pork Belly, Chicken, or Seasonal Veg)",
-                "price": 16,
-                "calories": 500,
-                "protein": 25
-              },
-              {
-                "name": "Chahan (with Shrimp)",
-                "price": 18,
-                "calories": 550,
-                "protein": 30
-              },
-              {
-                "name": "Kinoko Mochi",
-                "price": 17,
-                "calories": 400,
-                "protein": 10
-              },
-              {
-                "name": "DFFC Miso Ramen (Spicy)",
-                "price": 20,
-                "calories": 700,
-                "protein": 35
-              },
-              {
-                "name": "Tan Tan Men (Spicy)",
-                "price": 18,
-                "calories": 650,
-                "protein": 30
-              },
-              {
-                "name": "Hakata Tonkotsu Ramen",
-                "price": 17,
-                "calories": 600,
-                "protein": 30
-              },
-              {
-                "name": "Red Curry Ramen",
-                "price": 17,
-                "calories": 650,
-                "protein": 30
-              }
-            ]
-          }
+        }
       ]
     },
     {
       "meal_type": "Dinner",
+      "type": "restaurant",
+      "day": "Saturday",
       "restaurants": [
         {
           "restaurant": "Amadeus",
@@ -719,77 +743,7 @@
               "protein":10
             }
           ]
-        },
-        {
-            "restaurant": "Baba Dari",
-            "items": [
-              {
-                "name": "Chicken Shawarma Wrap",
-                "price": 5.00,
-                "calories": 450,
-                "protein": 12
-              }
-            ]
-        },
-        {
-            "restaurant": "Slurping Turtle",
-            "foods": [
-              {
-                "name": "Classic Tokyo Shoyu",
-                "price": 17,
-                "calories": 600,
-                "protein": 30
-              },
-              {
-                "name": "Shrimp Shio Ramen",
-                "price": 19,
-                "calories": 650,
-                "protein": 35
-              },
-              {
-                "name": "Chahan (with Pork Belly, Chicken, or Seasonal Veg)",
-                "price": 16,
-                "calories": 500,
-                "protein": 25
-              },
-              {
-                "name": "Chahan (with Shrimp)",
-                "price": 18,
-                "calories": 550,
-                "protein": 30
-              },
-              {
-                "name": "Kinoko Mochi",
-                "price": 17,
-                "calories": 400,
-                "protein": 10
-              },
-              {
-                "name": "DFFC Miso Ramen (Spicy)",
-                "price": 20,
-                "calories": 700,
-                "protein": 35
-              },
-              {
-                "name": "Tan Tan Men (Spicy)",
-                "price": 18,
-                "calories": 650,
-                "protein": 30
-              },
-              {
-                "name": "Hakata Tonkotsu Ramen",
-                "price": 17,
-                "calories": 600,
-                "protein": 30
-              },
-              {
-                "name": "Red Curry Ramen",
-                "price": 17,
-                "calories": 650,
-                "protein": 30
-              }
-            ]
-          }
+        }
       ]
     }
 ]
