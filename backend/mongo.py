@@ -27,7 +27,6 @@ all_data = []
 
 # Iterate over each file in the folder
 for file_name in os.listdir(folder_path):
-    print(file_name)
     if file_name.endswith('.json'):  # Ensure it's a JSON file
         file_path = os.path.join(folder_path, file_name)
         try:
@@ -40,7 +39,7 @@ for file_name in os.listdir(folder_path):
 
 # Insert all the data into the MongoDB collection
 if all_data:
-    with open('test.json', 'w', encoding='utf-8') as json_file:
+    with open('test1.json', 'w', encoding='utf-8') as json_file:
         json.dump(all_data, json_file, indent=4, ensure_ascii=False)
     try:
         result = collection.insert_many(all_data[0])
