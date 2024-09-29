@@ -9,6 +9,7 @@ import pandas as pd
 import requests
 import re
 import time
+import json
 import os
 
 
@@ -139,20 +140,35 @@ time.sleep(2)
 website_links = extract_website_links()
 driver.quit()
 driver = webdriver.Chrome()
-more_web_link = []
+dictAdd = dict()
+addy = ""
+name = ""
 for link in website_links:
 
     driver.get(link)
-    css_selector = f'[data-item-id="menu"]'
-    results = driver.find_elements(By.CSS_SELECTOR, css_selector)
+    css_selector1 = f'[data-item-id="address"]'
+    css_selector2 = f'[role="main"]'
+    results1 = driver.find_elements(By.CSS_SELECTOR, css_selector1)
+    results2 = driver.find_elements(By.CSS_SELECTOR, css_selector2)
 
-    for result in results:
+    for result in results1:
         try:
-            more_web_link.append(result.get_attribute("href"))
+            addy = (result.get_attribute("aria-label"))
             
         except Exception as e:
             print(f"Error extracting website link: {e}")
             continue
+
+    for result in results2:
+        try:
+            name = (result.get_attribute("aria-label"))
+            
+        except Exception as e:
+            print(f"Error extracting website link: {e}")
+            continue
+    
+    print(name, " ", addy)
+    dictAdd[name] = addy
     # html = driver.page_source
     # soup = BeautifulSoup(html, 'html.parser')
     # company_name = None
@@ -229,10 +245,9 @@ for link in website_links:
     #     # }
 
     #     # response = requests.post(url, headers=headers, json=jsonRec)
-more_web_link = set(more_web_link)
-for link in more_web_link:
-    print(link)
-    
 
 
+json_object = json.dumps(dictAdd, indent=2)
+with open("sample.json", "w") as outfile:
+    outfile.write(json_object)
 driver.quit()
