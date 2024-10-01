@@ -1,3 +1,4 @@
 *.env
 *.bashrc
 myvenv/
+env

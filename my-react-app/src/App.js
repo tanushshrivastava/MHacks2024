@@ -9,8 +9,27 @@ function App() {
     price: '',
     calories: '',
     protein: '',
-    time: 'Select Time',
+    time: [], // This will hold multiple days
   });
+
+
+  const handleInputChange = (e) => {
+    const { name, value, checked } = e.target;
+    if (name === 'time') {
+      setSearchParams(prev => ({
+        ...prev,
+        time: checked
+          ? [...prev.time, value]
+          : prev.time.filter(day => day !== value)
+      }));
+    } else {
+      setSearchParams(prev => ({ ...prev, [name]: value }));
+    }
+  };
+
+
+
+
   const [results, setResults] = useState(null);
 
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -37,27 +56,27 @@ function App() {
     days[(currentIndex + 2) % days.length],
   ];
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setSearchParams({ ...searchParams, [name]: value });
-  };
 
   const fetchMealSuggestions = useCallback(async () => {
+    const resultsByDay = {};
     try {
-      const response = await fetch(
-        `http://127.0.0.1:8000/api/search?day=${searchParams.time}&calorie_threshold=${searchParams.calories}&protein_threshold=${searchParams.protein}&price_threshold=${searchParams.price}`
-      );
-      if (!response.ok) {
-        throw new Error('No suitable meals found');
-      }
-      const data = await response.json();
-      console.log('Response from backend:', data);
-      setResults(data); // Set the results from the backend
+      await Promise.all(searchParams.time.map(async (day) => {
+        const response = await fetch(
+          `http://127.0.0.1:8000/api/search?day=${day}&calorie_threshold=${searchParams.calories}&protein_threshold=${searchParams.protein}&price_threshold=${searchParams.price}`
+        );
+        if (!response.ok) throw new Error(`Failed to fetch meals for ${day}`);
+        const data = await response.json();
+        resultsByDay[day] = data;  // Store data keyed by day
+      }));
+      setResults(resultsByDay); // Update state with results for all selected days
     } catch (error) {
       console.error('Error fetching meal suggestions:', error);
-      setResults(null); // Reset results to null on error
+      setResults(null); // Reset results on error
     }
   }, [searchParams]);
+
+
+
 
   useEffect(() => {
     if (
@@ -111,22 +130,23 @@ function App() {
                 onChange={handleInputChange}
                 className="search-input"
               />
-              <select
-                name="time"
-                value={searchParams.time}
-                onChange={handleInputChange}
-                className="search-input"
-              >
-                <option value="Select Time" disabled>
-                  Select Time
-                </option>
+              <div className="search-days">
                 {days.map((day) => (
-                  <option key={day} value={day}>
-                    {day}
-                  </option>
+                  <label key={day}>
+                    <input
+                      type="checkbox"
+                      name="time"
+                      value={day}
+                      checked={searchParams.time.includes(day)}
+                      onChange={handleInputChange}
+                    /> {day}
+                  </label>
                 ))}
-                <option value="Plan My Week!">Plan My Week!</option>
-              </select>
+              </div>
+
+
+
+
               <button onClick={fetchMealSuggestions} className="search-button">
                 Search
               </button>
@@ -137,43 +157,32 @@ function App() {
               ❮
             </button>
             <div className="calendar">
-              {visibleDays.map((day) => (
+              {searchParams.time.map((day) => (
                 <div key={day} className="day">
                   {day}
                   <div className="day-content scrollable-content">
-                  {/* Display results only under the selected day */}
-                  {results && searchParams.time === day && (
-                    <div className="meal-item">
-                      {results.breakfast && (
-                        <>
-                          <h4>Breakfast: {results.breakfast.items.join(', ')} (from {results.breakfast.restaurant})</h4>
-                          <p>Calories: {results.breakfast.total_calories}</p>
-                          <p>Protein: {results.breakfast.total_protein}g</p>
-                          <p>Price: ${results.breakfast.total_price.toFixed(2)}</p>
-                        </>
-                      )}
-                      {results.lunch && (
-                        <>
-                          <h4>Lunch: {results.lunch.items.join(', ')} (from {results.lunch.restaurant})</h4>
-                          <p>Calories: {results.lunch.total_calories}</p>
-                          <p>Protein: {results.lunch.total_protein}g</p>
-                          <p>Price: ${results.lunch.total_price.toFixed(2)}</p>
-                        </>
-                      )}
-                      {results.dinner && (
-                        <>
-                          <h4>Dinner: {results.dinner.items.join(', ')} (from {results.dinner.restaurant})</h4>
-                          <p>Calories: {results.dinner.total_calories}</p>
-                          <p>Protein: {results.dinner.total_protein}g</p>
-                          <p>Price: ${results.dinner.total_price.toFixed(2)}</p>
-                        </>
-                      )}
-                    </div>
-                  )}
-                </div>
+                    {results && results[day] && (
+                      <div className="meal-item">
+                        {['breakfast', 'lunch', 'dinner'].map((mealType) => (
+                          results[day][mealType] && (
+                            <div key={mealType}>
+                              <h4>{mealType}: {results[day][mealType].items.join(', ')} (from {results[day][mealType].restaurant})</h4>
+                              <p>Calories: {results[day][mealType].total_calories}</p>
+                              <p>Protein: {results[day][mealType].total_protein}g</p>
+                              <p>Price: ${results[day][mealType].total_price.toFixed(2)}</p>
+                            </div>
+                          )
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
+
+
+
+
             <button className="nav-button" onClick={handleNext}>
               ❯
             </button>

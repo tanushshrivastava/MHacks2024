@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: auto;
     padding-bottom: 40px;
   }
 
@@ -78,6 +78,14 @@ body {
   padding: 8px;
   font-family: 'Fredoka', sans-serif;
   width: 150px;
+  box-sizing: border-box;
+}
+.search-days{
+  border: 1px solid #c9ada7;
+  border-radius: 10px;
+  padding: 8px;
+  font-family: 'Fredoka', sans-serif;
+  width: 150;
   box-sizing: border-box;
 }
 
@@ -102,6 +110,15 @@ body {
   cursor: pointer;
 }
 
+button{
+  background-color: #9a8c98;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .calendar {
   display: flex;
   gap: 10px;
@@ -110,15 +127,16 @@ body {
 
 .day {
   width: 400px;
+  height: auto;
   text-align: center;
   font-family: 'Fredoka', sans-serif;
 }
 
 .day-content {
-  height: 400px;
+  min-height: 500px;
   margin-top: 5px;
   background-color: #f2e9e4;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .profile-icon {
@@ -131,7 +149,7 @@ body {
   }
 
 .scrollable-content {
-    max-height: 400px; /* Adjust height as needed */
+    max-height: auto; /* Adjust height as needed */
     overflow-y: auto;
   }
   

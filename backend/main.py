@@ -6,6 +6,10 @@ from itertools import combinations
 import os
 #from dotenv import load_dotenv
 
+# Load environment variables
+#load_dotenv()
+#from dotenv import load_dotenv
+
 #load_dotenv()
 app = FastAPI()
 
@@ -18,12 +22,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Load environment variables
+#load_dotenv()
+
 # Get MongoDB credentials from environment variables
 mongoPass = os.getenv("mongoPass")
 mongoUser = os.getenv("mongoUser")
 
 # Replace with your actual MongoDB URI
-uri = "mongodb+srv://Tanush:y54qdGGBlHDnRVA9@greenback.y44sh.mongodb.net/?retryWrites=true&w=majority&appName=greenback"
+uri = "mongodb+srv://username:password@greenback.y44sh.mongodb.net/?retryWrites=true&w=majority&appName=greenback"
 
 # MongoDB connection
 client = MongoClient(uri)  # Replace with your MongoDB connection string
